@@ -295,7 +295,7 @@ p {
     font-size: 3rem;
     position: absolute;
     width: 100%;
-    top: 50%;
+    top: 30%;
 }
 
 section {
@@ -664,7 +664,7 @@ section {
 }
 
 .team-wrap .team {
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1062,7 +1062,7 @@ section {
 
 video {
     position: fixed;
-    top: 50%;
+        top: 35%;
     left: 50%;
     min-width: 100%;
     min-height: 100%;
@@ -1070,10 +1070,11 @@ video {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
-    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
-    background-size: cover;
     transition: 1s opacity;
 }
 
-
+.navbar-light .navbar-toggler {
+     border-color: transparent;
+    margin: 25px 0px !important;
+}
 /*---------------------------------Animation---------------------------------*/
