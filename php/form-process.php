@@ -31,7 +31,7 @@ if (empty($_POST["message"])) {
 }
 
 
-$EmailTo = "24shahul@gmail.com";
+$EmailTo = "info@creativecraftksa.com";
 $Subject = "New Message Received from Website";
 
 // prepare email body text
