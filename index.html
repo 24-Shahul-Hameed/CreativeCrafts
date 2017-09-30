@@ -556,7 +556,7 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-5">
                         <div class="contact-form">
-                            <form action="">
+                            <!-- <form action="">
                                 <div class="form-group">
                                     <label>Name</label>
                                     <input type="text" class="form-control" placeholder=""> </div>
@@ -573,7 +573,34 @@
                                 <div class="form-group text-left">
                                     <button type="submit" class="btn btn-lg btn-submit">Submit</button>
                                 </div>
-                            </form>
+                            </form> -->
+ <form role="form" id="contactForm" data-toggle="validator" class="shake">
+    <div id="msgSubmit" class="alert alert-primary text-center hidden"></div>
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter name" required data-error="Please fill out this field.">
+        <div class="help-block with-errors"></div>
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+        <div class="help-block with-errors"></div>
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="text" class="form-control" id="phone" placeholder="Enter phone" required>
+        <div class="help-block with-errors"></div>
+    </div>
+    <div class="form-group">
+        <label for="message">Messages</label>
+        <textarea id="message" class="form-control" rows="4" placeholder="Enter your message" required></textarea>
+        <div class="help-block with-errors"></div>
+    </div>
+    <button type="submit" id="form-submit" class="btn btn-lg btn-submit">Submit</button>
+    <div class="clearfix"></div>
+</form>
+
+
                         </div>
                     </div>
                 </div>
@@ -590,6 +617,9 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/form-scripts.js"></script>
+
     <script>
         $('.carousel').carousel({
             interval: 2000

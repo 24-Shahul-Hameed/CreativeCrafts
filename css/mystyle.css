@@ -9,6 +9,9 @@ body {
 .block-text {
     margin: 10px 0;
 }
+.help-block.with-errors {
+    color: #F00;
+}
 
 .img-wrap {
     height: 100%;
